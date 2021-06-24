@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+
+nav {
+  height: 10vh;
+}
+
+.navbar .container {
+  width: 100%;
+}
+
+.navbar img {
+  width: 80px;
+}
+
+.nav-item {
+  font-family: "Fredoka One", cursive;
+  border-bottom: 1px #faf9f7 solid;
+}
+
+.nav-item:hover {
+  color: #e4b569;
+}
+
+.nav-item:last-child {
+  border-bottom: 0 !important;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  border-left: 0.25rem solid #82A116;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 1rem;
+}
+
+.navbar-collapse {
+  width: 100px;
+  padding-top: 1rem;
+  background: #faf9f7;
+  position: relative;
+  z-index: 3;
+}
+
+/* ? Landing Section */
+#landing {
+  height: 90vh;
+  background: url("https://source.unsplash.com/MGUmEYvGNUU") no-repeat center
+    center/cover;
+}
+
+#landing h1 strong {
+  color: #82A116;
+}
+
+#landing::after {
+  content: "";
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  z-index: 1;
+  background: rgba(240, 240, 240, 0.5);
+}
+
+.showcase {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.showcase h1 {
+  width: 90%;
+  font-family: "Fredoka One", cursive;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: #faf9f7;
+  margin: 0;
+  padding: 3rem 3rem 0;
+  opacity: 0.8;
+}
+
+.showcase p {
+    width: 90%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    background: #faf9f7;
+    opacity: 0.8;
+    padding: 1rem 3rem 3rem;
+}
+/* ? End Landing Section */
+
+/* ? Tentang Kami Section */
+#tentang-kami {
+  height: 60vh;
+  background: #E2CFA2;
+  padding: 2rem 0;
+}
+
+#tentang-kami .tentang-kami-flex{
+  height: 90%;
+  grid-gap: 2rem;
+}
+
+#tentang-kami .section-text{
+  width: 75%;
+}
+
+#tentang-kami h2,
+#tentang-kami .section-text h3 {
+  font-family: "Fredoka One", cursive;  
+}
+
+#tentang-kami .section-text p {
+  display: none;
+}
+
+#tentang-kami .section-text i {
+  color: #d81616;
+}
+
+#tentang-kami .section-image img {
+  margin: 0 auto;
+  height: 150px;
+}
+
+/* ? End Tentang Kami Section */
+
+/* ? Produk Section */
+#produk{
+  background: #E4E5D5;
+}
+
+#produk h2 {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+  margin: 0;
+}
+
+#produk img {
+  max-width: 450px;
+  height: 100%;
+  width: 100%;
+}
+
+p.lead   {
+  font-weight: 400;
+  margin: 0;
+}
+
+p.lead strong {
+  font-weight: 700;
+  color: #82A116;
+}
+
+.produk-grid {
+  grid-gap: 1rem;
+  padding: 2rem 2rem 0;
+}
+
+#produk .card {
+  background: #E2CFA2;
+}
+
+#produk .card .card-title{
+  color: #333;
+}
+
+#produk .row {
+  padding: 1rem 1rem 2rem;
+  grid-gap: 1rem;
+}
+
+#produk .text-muted {
+  color: #82A116 !important;
+}
+/* ? End Produk Section */
+
+/* ? Testimoni Section */
+#testimoni {
+  position: relative;
+  background: url('../img/palembang.jpg') no-repeat center center/cover;
+}
+
+#testimoni::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(20, 20, 20, 0.7);
+}
+
+#testimoni .row {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+  grid-gap: 1rem;
+}
+
+#testimoni .card {
+  width: 20rem;
+  background: #E4E5D5;
+  opacity: 0.9;
+}
+
+#testimoni h2 {
+  position: relative;
+  z-index: 5;
+  font-family: "Fredoka One", cursive;
+  color: #E4E5D5;
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+#testimoni .lead {
+  position: relative;
+  z-index: 5;
+  width: 90%;
+  color: #E4E5D5;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#testimoni .lead i {
+  color: #fbff00;
+}
+
+/* ? End Testimoni Section */
+
+@media (min-width: 568px) {
+  .navbar img {
+    width: 100px;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active {
+    border-left: 0;
+    border-bottom: 0.25rem solid #82A116;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .showcase h1,
+  .showcase p,
+  #testimoni .lead {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .showcase h1,
+  .showcase p {
+    width: 50%;
+  }
+
+  .tentang-kami-flex {
+    flex-direction: row !important;
+  }
+
+  #tentang-kami .section-text {
+    width: 30%;
+  }
+
+  #tentang-kami .section-image img {
+    height: 300px;
+  }
+
+  #tentang-kami .section-text p {
+    display: inline-block;
+    text-align: justify;
+  }
+}
