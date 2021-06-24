@@ -70,7 +70,7 @@ nav {
 
 /* ? ==========Landing Page Section============== */
 #landing {
-  height: 90vh;
+  height: 70vh;
   width: 100%;
   position: relative;
   background: url("https://source.unsplash.com/MGUmEYvGNUU") no-repeat center
@@ -205,6 +205,10 @@ nav {
 #produk .showcase p {
   font-size: 1rem;
   font-weight: 400;
+}
+
+#produk .showcase .card {
+  background-color: #e2cfa2;
 }
 
 #produk .showcase .card-title {
