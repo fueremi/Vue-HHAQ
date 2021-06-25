@@ -25,7 +25,7 @@ strong {
 .fixed-instagram,
 .fixed-facebook {
   position: fixed;
-  bottom: 40px;
+  bottom: 20px;
   left: 10px;
   z-index: 10;
   background: rgba(250, 249, 247, 0.8);
@@ -38,11 +38,11 @@ strong {
 }
 
 .fixed-instagram {
-  bottom: 100px !important;
+  bottom: 80px !important;
 }
 
 .fixed-facebook {
-  bottom: 160px !important;
+  bottom: 140px !important;
 }
 
 .fixed-whatsapp .btn-whatsapp,
