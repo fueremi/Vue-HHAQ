@@ -178,18 +178,17 @@ nav {
 #tentang-kami .showcase {
   margin: 0 auto;
   width: 90%;
-  padding: 2rem 1.5rem;
+  padding: 1rem 1.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#tentang-kami .showcase h2 {
-  order: 1;
+#tentang-kami h2 {
   margin: 0;
   font-size: 1.7rem;
   text-align: center;
-  padding: 1rem 0 1.5rem;
+  padding: 2rem 0 1rem;
   text-align: center;
 }
 
@@ -201,7 +200,7 @@ nav {
   margin: 0;
   font-size: 1.3rem;
   color: #82a116;
-  padding: 1.5rem 0 1rem;
+  padding: 2rem 0 1rem;
 }
 
 #tentang-kami .showcase .section-text p {
@@ -264,7 +263,6 @@ nav {
   font-weight: 400;
 }
 
-
 #produk .showcase .daftar-harga .paket-qurban .col-md-6:nth-child(odd) .card {
   background: #e4e5d5;
 }
@@ -309,7 +307,10 @@ nav {
 #produk .showcase .mengapa-memilih-kami .items .item {
   text-align: center;
   padding: 1rem;
-  background: #abc747;
+  background: #e2cfa2;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 5px 5px rgb(10 10 10 / 10%)
 }
 
 #produk .showcase .mengapa-memilih-kami .items p {
@@ -464,5 +465,160 @@ nav {
     .card {
     background: #e4e5d5;
   }
+
+  #produk .showcase .mengapa-memilih-kami .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    grid-gap: 0.5rem;
+  }
+
+  #produk .showcase .mengapa-memilih-kami .items .item:nth-child(even) {
+    background: #e4e5d5;
+  }
 }
 /* ? =========End Tablet Devices==================== */
+
+/* ? =========Laptop Devices======================== */
+@media (min-width: 1024px) {
+  .navbar-light .navbar-nav .nav-link.active {
+    border-left: 0;
+    border-bottom: 0.25rem solid #82a116;
+  }
+
+  #landing {
+    height: 90vh;
+  }
+
+  #landing .showcase,
+  #produk .showcase,
+  #testimoni .showcase {
+    width: 50%;
+  }
+
+  #landing .showcase .salam {
+    font-size: 2rem;
+  }
+
+  #landing .showcase h1 {
+    font-size: 3rem;
+  }
+
+  #landing .showcase p {
+    font-size: 1.2rem;
+  }
+
+  #tentang-kami {
+    height: 60vh;
+  }
+
+  #tentang-kami h2 {
+    font-size: 2rem;
+  }
+
+  #tentang-kami .showcase {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    grid-gap: 3rem;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0 0 2rem;
+  }
+
+  #tentang-kami .showcase .section-text h3 {
+    font-size: 1.75rem;
+  }
+  
+  #tentang-kami .showcase .section-text p {
+    font-size: 1.3rem;
+  }
+
+  #produk .showcase {
+    padding: 1rem 0 2.5rem;
+  }
+
+  #produk .showcase h2 {
+    font-size: 2rem;
+  }
+
+  #produk .showcase h3 {
+    font-size: 1.7rem;
+  }
+
+  #produk .showcase h4 {
+    font-size: 1.4rem;
+  }
+
+  #produk .showcase p {
+    font-size: 1.3rem;
+  }
+
+  #produk .showcase #carouselExampleControls {
+    padding: 1rem 7rem;
+  }
+
+  #produk .showcase .card {
+    min-height: 12rem;
+  }
+
+  #produk .showcase .card-title {
+    font-size: 1.3rem;
+  }
+  
+  #produk .showcase .card-subtitle {
+    font-size: 1.15rem;
+  }
+  
+  #produk .showcase .card-text {
+    font-size: 1rem;
+  }
+  
+  #produk .showcase .card-text strong {
+    font-size: 1rem;
+  }
+
+  #produk
+    .showcase
+    .daftar-harga
+    .paket-qurban
+    .col-md-6:nth-child(4n + 0)
+    .card,
+  #produk
+    .showcase
+    .daftar-harga
+    .paket-qurban
+    .col-md-6:nth-child(4n + 1)
+    .card {
+    background: #e2cfa2;
+    }
+
+    #produk
+    .showcase
+    .daftar-harga
+    .paket-qurban
+    .col-md-6:nth-child(even)
+    .card {
+      background: #e4e5d5;
+    }
+    
+    #testimoni .showcase h2 {
+      font-size: 2rem;
+    }
+
+    #testimoni .showcase p {
+      font-size: 1.2rem;
+    }
+
+    #testimoni #testimoni-carousel {
+      width: 40%;
+    }
+
+}
+/* ? =========End Laptop Devices==================== */
