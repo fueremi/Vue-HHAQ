@@ -62,7 +62,7 @@ strong {
 
 .fixed-whatsapp .btn-whatsapp img,
 .fixed-instagram .btn-instagram img,
-.fixed-facebook .btn-facebook img  {
+.fixed-facebook .btn-facebook img {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -264,8 +264,9 @@ nav {
   font-weight: 400;
 }
 
-#produk .showcase .daftar-harga .paket-qurban .col-md:nth-child(even) .card {
-  background: #E4E5D5;
+
+#produk .showcase .daftar-harga .paket-qurban .col-md-6:nth-child(odd) .card {
+  background: #e4e5d5;
 }
 
 #produk .showcase .card {
@@ -273,10 +274,6 @@ nav {
   border-radius: 5px;
   border: 0;
   box-shadow: 5px 5px rgba(10, 10, 10, 0.1);
-}
-
-#produk .showcase .card:nth-child(even) {
-  background-color: #faf9f7;
 }
 
 #produk .showcase .card-title {
@@ -292,7 +289,7 @@ nav {
 #produk .showcase .card-text {
   text-align: justify;
   font-size: 0.8rem;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: 1.3;
 }
 
@@ -333,11 +330,11 @@ nav {
 /* ? =========Testimoni Section================= */
 #testimoni {
   position: relative;
-  background: url('../img/palembang.jpg') no-repeat center center/cover;
+  background: url("../img/palembang.jpg") no-repeat center center/cover;
 }
 
 #testimoni::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -391,7 +388,7 @@ nav {
 #testimoni .showcase .card .card-body p.testimoni-title {
   margin: 0;
   text-align: center;
-  color: #333; 
+  color: #333;
   font-family: "Fredoka One", cursive;
   font-size: 1rem;
   padding: 0.5rem 0;
@@ -416,3 +413,56 @@ nav {
 }
 /* ? =========End Testimoni Section================= */
 
+/* ? =========Tablet Devices======================== */
+@media (min-height: 768px) {
+  .fixed-whatsapp,
+  .fixed-instagram,
+  .fixed-facebook {
+    width: 60px;
+    height: 60px;
+  }
+
+  .fixed-instagram {
+    bottom: 100px !important;
+  }
+
+  .fixed-facebook {
+    bottom: 180px !important;
+  }
+
+  #landing .showcase,
+  #tentang-kami .showcase,
+  #produk .showcase,
+  #testimoni .showcase {
+    width: 70%;
+  }
+
+  #produk .showcase .card {
+    min-height: 10rem;
+  }
+
+  #testimoni #testimoni-carousel {
+    width: 70%;
+    margin: auto;
+  }
+
+  #produk .showcase .daftar-harga .paket-qurban .col-md-6:nth-child(odd) .card {
+    background: #e2cfa2;
+  }
+
+  #produk
+    .showcase
+    .daftar-harga
+    .paket-qurban
+    .col-md-6:nth-child(4n + 0)
+    .card,
+  #produk
+    .showcase
+    .daftar-harga
+    .paket-qurban
+    .col-md-6:nth-child(4n + 1)
+    .card {
+    background: #e4e5d5;
+  }
+}
+/* ? =========End Tablet Devices==================== */
