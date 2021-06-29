@@ -11,26 +11,6 @@
           <img :src="`data:image/png;base64,${bms.image}`" />
         </a>
       </div>
-      <!-- <div class="fixed-instagram heartbeat">
-        <a
-          href="https://www.instagram.com/hh_aqiqahqurban/"
-          target="__blank"
-          rel="noopener noreferrer"
-          class="btn btn-instagram"
-        >
-          <img src="./assets/instagram.png" alt="" />
-        </a>
-      </div>
-      <div class="fixed-facebook heartbeat">
-        <a
-          href="https://web.facebook.com/profile.php?id=100070099414560"
-          target="__blank"
-          rel="noopener noreferrer"
-          class="btn btn-facebook"
-        >
-          <img src="./assets/facebook.png" alt="" />
-        </a>
-      </div> -->
     </div>
     <Navbar />
     <router-view />
