@@ -3,7 +3,7 @@
     <Landing />
     <Tentang-Kami />
     <Produk />
-    <Testimoni />
+    <Testimoni :data="this.$store.state.testimoni" />
   </main>
 </template>
 
@@ -22,5 +22,8 @@ export default {
     Produk,
     Testimoni,
   },
+  created(){
+    this.$store.dispatch('fetchTestimoni')
+  }
 };
 </script>

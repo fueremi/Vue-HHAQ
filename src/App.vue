@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <div id="fixed-button-section">
-      <div class="fixed-whatsapp heartbeat">
+      <div v-for="bms in this.$store.state.mediaSosial" :key="bms.id" :class="`fixed-${bms.name} heartbeat`">
         <a
-          href="https://api.whatsapp.com/send?phone=081279842154"
+          :href="`${bms.url}${bms.username}`"
           target="__blank"
           rel="noopener noreferrer"
-          class="btn-whatsapp"
+          :class="`btn-${bms.name}`"
         >
-          <img src="./assets/whatsapp.png" alt="" />
+          <img :src="`data:image/png;base64,${bms.image}`" />
         </a>
       </div>
-      <div class="fixed-instagram heartbeat">
+      <!-- <div class="fixed-instagram heartbeat">
         <a
           href="https://www.instagram.com/hh_aqiqahqurban/"
           target="__blank"
@@ -30,7 +30,7 @@
         >
           <img src="./assets/facebook.png" alt="" />
         </a>
-      </div>
+      </div> -->
     </div>
     <Navbar />
     <router-view />
@@ -48,6 +48,9 @@ export default {
     Navbar,
     Footer,
   },
+  created() {
+    this.$store.dispatch('fetchMediaSosial')
+  }
 };
 </script>
 
@@ -661,16 +664,24 @@ nav {
   #tentang-kami .showcase {
     position: absolute;
     height: 100%;
-    width: 60%;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: row;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     justify-content: stretch;
     align-items: center;
     padding: 0 0 2rem;
+  }
+
+  #tentang-kami .showcase .section-text {
+    order: 1;
+  }
+  
+  #tentang-kami .showcase .section-text {
+    order: 2;
   }
 
   #tentang-kami .showcase .section-text h3 {
